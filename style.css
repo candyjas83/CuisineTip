@@ -1,0 +1,159 @@
+:root {
+  --inputBackground: mistyrose;
+  --border: .5em solid lightcoral;
+  --backgroundImage: linear-gradient(to right bottom, rgba(240, 128, 128, 0.55), rgba(221, 160, 221, 0.55));
+  --color-light: lightcoral;
+  --color-med: fuchsia;
+  --color-med-dark: plum;
+  --color-dark: purple;
+}
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+}
+
+.header__section {
+  height: 3.5em;
+  background-image: var(--backgroundImage);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/*header is the paragraph*/
+header {
+  padding-top: .8em;
+  padding-left: .5em;
+  font-size: 1.5em;
+  color: var(--color-light);
+  font-weight: bold;
+}
+
+.icon__thumbs-up {
+  width: 2em;
+  height: 2em;
+  fill: var(--color-light);
+  padding-top: .5em;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, var(--color-light), var(--color-med-dark)),url(../img/food.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: screen; /*makes image pop through the gradient */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+
+  background-image: linear-gradient(to right bottom, var(--color-med), var(--color-dark));
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#calculate, #clear {
+  font-size: inherit;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  width: 10rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 10rem;
+  background-image: linear-gradient(to right bottom, var(--color-med), var(--color-dark));
+  color: #fff;
+  transition: all .2s;
+}
+#calculate:hover, #clear:hover {
+  background-image: linear-gradient(to right bottom, darkorchid, mediumpurple);
+  box-shadow: 2px 2px 4px black;
+}
+
+
+#bill_Display {
+  width: 25%;
+  margin-top: 3em;
+  padding: 3em;
+  background-image: var(--backgroundImage);
+  border: var(--border);
+  border-radius: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tip_Display {
+  width: 25%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 3em;
+  border: var(--border);
+  border-radius: 1em;
+  background-image: var(--backgroundImage);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#final_Bill {
+  font-size: inherit;
+  padding-left: .5em;
+  width: 6em;
+  border: .1em dashed var(--color-dark);
+  background-color: var(--inputBackground);
+
+}
+
+#final_Tip {
+  font-size: inherit;
+  padding-left: .5em;
+  width: 6em;
+  border: .1em dashed var(--color-dark);
+  background-color: var(--inputBackground);
+}
+
+input {
+border-radius: .5em;
+background-color: var(--inputBackground);
+font-size: inherit;
+width: 4.5em;
+height: 1.5em;
+
+}
+
+select {
+  background-color: var(--inputBackground);
+  font-size: inherit;
+  width: 11.5em;
+  height: 1.5em;
+}
+
+.footer_section {
+  height: 3.5em;
+  background-image: var(--backgroundImage);
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer {
+  color: #fff;
+  padding-left: 1em;
+  padding-top: 1.5em;
+  font-size: .8em;
+}
+
+.icon__twitter, .icon__facebook, .icon__instagram {
+  fill: #fff;
+  width: 2em;
+  height: 2em;
+  padding-right: 1em;
+  padding-top: 1em;
+}

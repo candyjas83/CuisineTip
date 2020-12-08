@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CuisineTip</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <div class="header__section">
+      <header>CuisineTip</header>
+      <svg class="icon__thumbs-up">
+        <use xlink:href="../img/sprite2.svg#icon-thumbs-up"></use>
+      </svg>
+  </div>
+  <div class="container">
+  <div id="bill_Display">
+  <h1>Calculate Tip Here</h1>
+  <form id="tip_calculator">
+    <p>How much was your bill?</p>
+    <input type="text" id="bill_Amt" placeholder="$" required></input>
+    <p>How was your service?</p>
+    <select id="service_Quality">
+      <option>-- Choose an Option</option>
+      <option value="0.3">30% - Outstanding</option>
+      <option value="0.2">20% - Good</option>
+      <option value="0.15">15% - Ok</option>
+      <option value="0.1">10% - Bad</option>
+      <option value="0.05">5% - Terrible</option>
+    </select>
+  </form><br/>
+  <button type="button" form="tip_calculator" id="calculate">Calculate</button>
+  </div>
+  <div id="tip_Display">
+  <h1>New Bill Amount</h1>
+  <p>Calculated Tip:</p>
+  <p id="final_Tip">$0.00</p>
+  <p>Total Bill Amount:</p>
+  <p id="final_Bill">$0.00</p>
+  <button type="button" form="tip_calculator" id="clear">Clear</button>
+  </div>
+  </div>
+  <div class="footer_section">
+  <footer>&copy; CuisineTip 2020 | Design: Candyce Jasey</footer>
+  <div class="social__media">
+  <svg class="icon__facebook">
+    <use xlink:href="../img/sprite.svg#icon-facebook-with-circle"></use>
+  </svg>
+  <svg class="icon__instagram">
+    <use xlink:href="../img/sprite.svg#icon-instagram-with-circle"></use>
+  </svg>
+  <svg class="icon__twitter">
+    <use xlink:href="../img/sprite.svg#icon-twitter-with-circle"></use>
+  </svg>
+  </div>
+  </div>
+  <script src="calculator.js"></script>
+  <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
